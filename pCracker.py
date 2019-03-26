@@ -18,6 +18,14 @@ def menu():
         option = int(option)
 
     return option
+#---------------------------------------------------------------------------------------------
+
+def readFile():
+    f = open("pwd.txt", "r")
+    if(f.mode == "r"):
+        contents = f.read()
+        return contents
+    return 
 
 #---------------------------------------------------------------------------------------------
 
@@ -39,6 +47,8 @@ def chooseMethod(num):
 #Password with only lowercase letters
 def methodOne():
     print("Method one")
+    hola = readFile()
+    print(hola)
 
 #Password with lower and uppercase letters
 def methodTwo():
